@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #317a9c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-box {
+      background: #ffffff;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      width: 350px;
+    }
+
+    .login-box h2 {
+      background-color: #024c7c;
+      color: white;
+      margin: -30px -40px 30px -40px;
+      padding: 20px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      font-size: 28px;
+    }
+
+    .input-box {
+      display: flex;
+      align-items: center;
+      margin: 15px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .input-box .icon {
+      background-color: #024c7c;
+      color: white;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .input-box input {
+      border: none;
+      outline: none;
+      padding: 10px;
+      flex: 1;
+    }
+
+    .forgot {
+      display: block;
+      margin: 10px 0;
+      text-align: left;
+      color: purple;
+      font-size: 14px;
+      text-decoration: underline;
+    }
+
+    .login-btn {
+      background-color: #024c7c;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      margin: 10px 0;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .signup-text {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .signup-text a {
+      color: purple;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>Login</h2>
+    <form>
+      <div class="input-box">
+        <span class="icon">📧</span>
+        <input type="email" placeholder="Email" required>
+      </div>
+      <div class="input-box">
+        <span class="icon">🔒</span>
+        <input type="password" placeholder="Password" required>
+      </div>
+      <a href="#" class="forgot">Forgot Password?</a>
+      <button type="submit" class="login-btn">Login</button>
+      <p class="signup-text">Don't have an account? <a href="#">SignUp Here</a></p>
+    </form>
+  </div>
+</body>
+</html>
+
